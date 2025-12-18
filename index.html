@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Java</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Nabla&display=swap" rel="stylesheet">
+<title>Javascript</title>
+<script src="jquery-3.7.1.min.js.download" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script><script src="jquery-ui.min.js.download" integrity="sha256-AlTido85uXPlSyyaZNsjJXeCs07eSv3r43kyCVc8ChI=" crossorigin="anonymous"></script>
+<script>
+   $(function(){
+       $('#list').sortable();
+       
+   }); 
+</script>
+<link href="css2(1)" rel="stylesheet">
+<link href="css2(2)" rel="stylesheet">
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    } body {
+        background: orange;
+    } #page {
+        width: 928px;
+        height: 1536px;
+        background: linear-gradient(to bottom right, orange, white, #3454a5);
+        border: 1px solid dimgray;
+        box-shadow: 2px 3px 6px gray;
+        margin: 0 auto;
+    } h2 {
+        font: italic 16pt/1.4em Lexend;
+        text-align: center;
+    } main {
+        width: 78%;
+        margin: 36px auto;
+    } header img {
+        width: 100%;
+       
+    } header h1 {
+        font: 48pt/1.4em Nabla;
+        text-align: center;
+        margin-top: 24px;
+        text-shadow: 2px 3px 6px goldenrod;
+    } main p {
+        font: 14pt/1.4em Lexend;
+        width: 65ch;
+        margin: 24px auto;
+    } main {
+        width: 80%;
+        height: auto;
+        // min-height: 320px;
+    } main figure {
+        width: 200px;
+        height: auto;
+        margin: 18px;
+    } main img {
+        width: 200px;
+        height: auto;
+        float: right;
+    } figcaption {
+        font: 12pt/1.4em Lexend;
+        text-align: center;
+    } ul {
+        width: 100%;
+        height: 35px;
+        margin-top: -3px;
+    } li {
+        width: 20%;
+        height: 35px;
+        border-radius: 6px;
+        list-style: none;
+        text-align: center;
+        font: 14pt/1.8em Lexend;
+        background: rgba(125,147,151,0.50);
+        margin: 0 auto;
+        display: block;
+    } a li {
+        color: black;
+    } a li:hover {
+        background: rgba(144,238,144,0.5);
+    } ul li:hover li {
+        visibility: visible;
+    } a {
+        text-decoration: none;
+    } #container {
+        width: 320px;
+        height: 256px;
+        border-radius: 12px;
+        margin: 24px auto;
+        font: 14pt/1.4em Lexend;
+        display: grid;
+        grid-template: repeat(4, 64px) / auto auto;
+    } #list {
+        width: 256px;
+        height: 256px;
+
+        border-radius: 12px;
+    } .listitem {
+        width: 254px;
+        height: 62px;
+        background: orange;
+        border-radius: 12px;
+        margin: 2px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    } #numbers {
+        width: 64px;
+        height: 256px;
+        float: left;
+    } .number {
+        width: 62px;
+        height: 62px;
+        background: lightblue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 12px;
+        margin: 2px 0;
+    }
+</style>
+</head>
+
+<body>
+    <div id="page">
+        <header>
+            <img src="banner.png">
+                <a href="index.html"><li>Home</li>
+                </a>
+            <h1>Portfolio Survey</h1>
+            <h2>Please arrange the projects you have seen in order of preference.</h2>
+        </header>
+        <main>
+    <div id="container">
+    <div id="numbers">
+        <div class="number">1</div>
+        <div class="number">2</div>
+        <div class="number">3</div>
+    </div>
+    <div id="list" class="ui-sortable">
+        
+        <div class="listitem ui-sortable-handle">Magazine Cover</div><div class="listitem ui-sortable-handle" style="">Tesla Report</div>
+        
+        <div class="listitem ui-sortable-handle">Tokyo Tower Infographic</div>
+    </div>
+    </div>
+    </main>
+
+    </div>
+
+</body></html>
